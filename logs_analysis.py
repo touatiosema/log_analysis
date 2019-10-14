@@ -71,27 +71,27 @@ order by errors desc;
 if __name__ == "__main__":
     # printing the popular articles:
     pop_art = most_pop_articles()
-    print "Most popular three articles of all time:"
-    print "title".ljust(37), "views"
-    print "-"*47
+    print("Most popular three articles of all time:")
+    print("title".ljust(37), "views")
+    print("-"*47)
     for e in pop_art:
-        print e[0], '---', e[1], 'views'
-    print "-"*47
+        print(e[0], '---', e[1], 'views')
+    print("-"*47)
 
     # printing the popular authors:
     pop_auth = most_pop_authors()
-    print "\n\nMost popular authors of all time:"
-    print "author".ljust(37), "views"
-    print "-"*47
+    print("\n\nMost popular authors of all time:")
+    print("author".ljust(37), "views")
+    print("-"*47)
     for e in pop_auth:
-        print e[0].ljust(32), '---', e[1], 'views'
-    print "-"*47
+        print(e[0].ljust(32), '---', e[1], 'views')
+    print("-"*47)
     # printing the day where error requeset are bigger than 1%:
     errors = errors_above_one()
-    print "\n\nDays where error requests are bigger than 1%:"
-    print "Date".ljust(37), "error ratio"
-    print "-"*47
+    print("\n\nDays where error requests are bigger than 1%:")
+    print("Date".ljust(37), "error ratio")
+    print("-"*47)
     for e in errors:
-        print e[0].strftime('%b %d, %Y').ljust(32), '---  %.2f' % e[1],\
-            '% erros'
-    print "-" * 47
+        print(e[0].strftime('%b %d, %Y').ljust(32), '---  %.2f' % e[1],
+              '% erros')
+    print("-" * 47)
