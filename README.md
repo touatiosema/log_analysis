@@ -1,11 +1,8 @@
 # Logs Analysis
-
-This a program written in python3, It checks the database created by the newsdata.sql in the postgresql database manager to extract usefull information, this database contains information about articles and their authors, and a table of containing a logfile information of a web server.
-The program extracts the following informations:
-    1. Most popular three articles of all time.
-    2. Most popular authors of all time.
-    3. Days where error requests are bigger than 1%.
-
+This a program written in python3, It checks the database created by the newsdata.sql in the PostgreSQL database manager to extract usefull information, this database contains information about articles and their authors, and a table of containing a log file information of a web server. The program extracts the following informations:
+1. Most popular three articles of all time. 
+2. Most popular authors of all time. 
+3. Days when error requests are bigger than 1%.
 
 ### Prerequisites
 
